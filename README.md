@@ -22,9 +22,9 @@ function recursiveFunc(...args) {
 try {
     return recursiveFunc(...args);
 } catch (e) {
-     if (e instanceof RangeError) {
-    	if (e.message === 'Maximum call stack size exceeded') {
-            return recursiveFunc(...storedArgs); //continue recursion w stored arguments
+    if (e instanceof RangeError) {
+        if (e.message === 'Maximum call stack size exceeded') {
+            return recursiveFunc(...storedArgs); //continue recursion with stored arguments
         }
     } else {
         throw e;
