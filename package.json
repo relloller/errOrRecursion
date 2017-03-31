@@ -1,0 +1,22 @@
+{
+  "name": "errorrecursion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "errOrRecursion.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/relloller/errOrRecursion.git"
+  },
+  "author": "relloller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/relloller/errOrRecursion/issues"
+  },
+  "homepage": "https://github.com/relloller/errOrRecursion#readme",
+  "dependencies": {
+    "big.js": "^3.1.3"
+  }
+}
