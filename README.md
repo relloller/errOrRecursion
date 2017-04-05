@@ -37,18 +37,19 @@ try {
       npm install
   
  Calculation of the millionth element in the Fibonacci sequence:
-errOrRecursion: 7425ms
 
-trampoline:     4356ms
+errOrRecursion.js: 7425ms
 
-tco-harmony:    3415ms
+trampoline.js:     4356ms
 
-iteration:      3591ms
+tco-harmony.js:    3415ms
+
+iteration.js:      3591ms
  
 
 *fibonacci 1000000:* 1.953282128707757731632014947596256332443542996591873396953405194571625257887015694766641987634150146128879524335220236084625510912019560233744015438115196636156919962135e+208987
 
-Be careful of growing arrays, objects, maps, etc. which may cause an overflow of the allocated heap.
+Be careful of growing arrays, objects, etc. which may cause an overflow of the allocated heap.
 
  #### Notes: 
    Tail call optimization is available for Node.js using the '-harmony' argument. Example provided in tco-harmony.js
