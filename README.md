@@ -6,7 +6,7 @@
 ### Implementation: 
 
 
-By using try-catch to specifically target the RangeError type error which is thrown in response to call stack overflows, it is possible to continue tail recursion by storing of the most recent function arguments in a variable.
+By using try-catch to specifically target the RangeError type error which is thrown in response to call stack overflows, it is possible to continue tail recursion by storing the most recent function arguments in a variable.
   
  Error of interest:		**RangeError: Maximum call stack size exceeded**
 
