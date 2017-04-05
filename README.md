@@ -19,15 +19,17 @@ function recursiveFunc(...args) {
     return recursiveFunc(...someArgs);
 }
 
-try {
-    return recursiveFunc(...args);
-} catch (e) {
-    if (e instanceof RangeError) {
-        if (e.message === 'Maximum call stack size exceeded') {
-            return recursiveFunc(...storedArgs); //continue recursion with stored arguments
+function errOrRecursion(fnc, ...fncArgs) {
+    try {
+        return fnc(...fncArgs)
+    } catch (e) {
+        if (e instanceof RangeError) {
+            if (e.message === 'Maximum call stack size exceeded') {
+                return errOrRecursion(fnc, ...storedArgs); //continue recursion with stored arguments
+            }
+           return console.error(e);
         }
-    } else {
-        throw e;
+        return console.error(e);
     }
 }
 ``` 
